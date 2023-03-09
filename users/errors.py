@@ -1,0 +1,2 @@
+class EmailNotFound(Exception):
+	pass
