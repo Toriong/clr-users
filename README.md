@@ -3,6 +3,7 @@ I am trying to upload a file to the agora server so that I can reference it via 
 Here's how I structure the request that is sent to agora's server: 
 
 `pathToFile = 'C:\Users\gtori\OneDrive\Desktop\messaging_hud\users\files\testFile.png'
+
 headers = {'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW', 'Authorization': 'Bearer token'}
 agoraUrl = https://a41.chat.agora.io/orgName/appName/chatfiles
 res = requests.post(agoraUrl, { file:  pathToFile }, headers=headers) 
